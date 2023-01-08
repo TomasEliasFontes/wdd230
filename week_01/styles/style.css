@@ -1,0 +1,53 @@
+/* Import Font to the pages */
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Croissant+One&display=swap');
+
+/*s*/
+:root {
+/* Fonts */
+--heading-font: "", cursive;
+--paragraph-font: Alice, Helvetica, sans-serif;
+
+/* Colors */
+--primary-color:  cadetblue  ;
+--secondary-color: #10100f ;
+--accent1-color: #E6DDCF;
+--accent2-color: white;
+}
+
+/* Body */
+html {
+    display: grid;
+    justify-content: center;
+}
+
+header{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    padding:20px;
+    background-color: var(--primary-color);
+    border-radius: 10px ;
+    text-align: center;
+}
+
+img {
+    grid-column: 1;
+    box-shadow: 1px 4px 8px ;
+  }
+
+h1 {
+    grid-column: 2 / 4;
+    color: rgb(255, 255, 255);
+    
+}
+
+footer{
+    background-color: var(--primary-color);
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px ;
+    text-align: center;
+    font-size: large;
+
+}
