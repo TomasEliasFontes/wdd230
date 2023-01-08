@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initialcale=1.0-s">
-    <meta name="descriptions" content="Assignment portal for Susan Smith in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <meta name="description" tent="Assignment portal for Katherine Campbell in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
     <link type="text/css" rel="stylesheet" href="styles/style.css">
     <title>wwd230 Portal Page</title>
 </head>
 <body>
 <header>
-    <img src="images/me.png" width="110">
+    <img src="images/me.png" width="110" alt="Tomas Fontes img">
     <h1> Tomás Fontes</h1>
 </header>
 <main>
@@ -31,8 +31,19 @@
       </section>
 </main>
 <footer>
-    <p> ©<span id="year"></span>| Tomas Fontes | Argentina</p>
-    <p><span id="oLastModif"> </span></p>
+    <p> ©<span id="currentyear"></span> | Tomas Fontes | Argentina</p>
+    <p><span id = "lastmodified"></span></p>
+    
+    <script>
+        let date = document.lastModified;
+        document.getElementById("lastmodified").innerHTML = `Last modified : ${date}`;
+       
+        const d = new Date();
+        const year = d.getFullYear();
+        document.getElementById("currentyear").innerHTML = `${year}`;
+    </script>
+    
+    </script>
 </footer>
 </body>
 </html>
