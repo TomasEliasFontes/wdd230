@@ -1,10 +1,9 @@
 /* Import Font to the pages */
-@import url('https://fonts.googleapis.com/css2?family=Alice&family=Croissant+One&display=swap');
 
 /*s*/
 :root {
 /* Fonts */
---heading-font: "", cursive;
+--heading-font: 'Roboto', sans-serif;
 --paragraph-font: Alice, Helvetica, sans-serif;
 
 /* Colors */
@@ -16,33 +15,30 @@
 
 /* Body */
 html {
-    display: grid;
-    justify-content: center;
-}
+    margin:0 auto;
+    padding: 0.75rem;
+    max-width: 45rem;
 
-header{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
-    padding:20px;
-    background-color: var(--primary-color);
-    border-radius: 10px ;
-    text-align: center;
 }
 
 img {
-    grid-column: 1;
+    float: left;
     box-shadow: 1px 4px 8px ;
   }
 
 h1 {
-    grid-column: 2 / 4;
+    font-family: var(--heading-font);
+    font-size:  1.5em;
     color: rgb(255, 255, 255);
-    
 }
+h2{
+    font-family: var(--heading-font);
+}
+p,ul,a {
+    font-family: var(--paragraph-font);
 
-footer{
+}
+header,footer{
     background-color: var(--primary-color);
     margin-top: 20px;
     padding: 20px;
