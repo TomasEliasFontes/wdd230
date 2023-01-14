@@ -15,6 +15,7 @@ header, footer{
     
 }
 header img{
+    width: 120px;
     float: none;
     margin:auto
 }

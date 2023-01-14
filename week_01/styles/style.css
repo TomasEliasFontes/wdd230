@@ -22,6 +22,7 @@ html {
 }
  
 img {
+    width: 90px;
     float: left;
     box-shadow: 1px 4px 8px ;
   }
@@ -41,9 +42,10 @@ p,ul,a {
 header,footer{
     background-color: var(--primary-color);
     margin-top: 20px;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px ;
     text-align: center;
     font-size: large;
 
 }
+
