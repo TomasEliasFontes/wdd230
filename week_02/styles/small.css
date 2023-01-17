@@ -14,12 +14,14 @@
     }
     
     /* Body */
-    main{
-        display: grid;
-        grid-template-columns: 0/2;
+    main {
 
+        display: grid;
+        grid-template-columns: 1fr;
     }
-     
+    
+
+    
     picture img {
         width: 100%;
       }
@@ -39,7 +41,7 @@
         font-family: var(--paragraph-font);
     
     }
-    section{
+    section {
         margin: 10px;
     }
     
