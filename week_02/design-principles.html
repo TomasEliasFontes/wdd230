@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Assignment portal for Katherine Campbell in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>wwd230 Portal Page</title>
+</head>
+<body>
+    <header>
+        <h1>Design Principles Document</h1>
+        <h2>Tomas Fontes</h2>
+    </header>
+    <main>
+        <section id="o">
+            <h1>PARC: Repetition</h1>
+            <p>Mercado Libre</p>
+            <a href="https://www.mercadolibre.com.ar" target="_blank">mercadolibre.com</a>
+            <picture>
+                <img src="images/MercadoLibre.png" alt="Repetition">
+            </picture>
+            <p>The proper repetition of content and elements on a page. A design that repeats the same navigation structure, design, schemes, colors, styles and fonts. You can see how the same layout is always used on the page so that it is easy to see and adapt to what one is looking for with the same points and diagrams.</p>
+        </section>
+        <section id="n">
+            <h1>Visual Hierarchy </h1>
+            <p>Wood Market</p>
+            <a href="https://woodmarket.com.ar/" target="_blank">woodmarket.com.ar</a>
+            <picture>
+                <img src="images/woodmarket.png" alt="Visual Hierarchy">
+            </picture>
+            <p>The visual hierarchy is a broad principle that designs the page to organize the elements in your work and showing the work of the page or a visual flow. In this page you can see how with examples calls what can be achieved with those elements of form striking.</p>
+        </section>
+        <section id="e">
+            <h1>White Space and Clean Design</h1>
+            <p>The Church of Jesus Christ of Latter Day Saints</p>
+            <a href="https://www.churchofjesuschrist.org" target="_blank">churchofjesuschrist.org</a>
+            <picture>
+                <img src="images/lds.png" alt="White spaces">
+            </picture>
+            <p>The blank spaces serve to focus attention on something and not lose focus or quickly understand what it is about. In this example you can see how the church undertakes its work and invites you to see more in a concentrated way.</p>
+        </section>
+    </main>
+    <footer>
+        <p> ©<span id="currentyear"></span> | Tomas Fontes | Argentina</p>
+        <p><span id = "lastmodified"></span></p>
+    </footer>
+    <script>
+        let date = document.lastModified;
+        document.getElementById("lastmodified").innerHTML = `Last modified : ${date}`;
+       
+        const d = new Date();
+        const year = d.getFullYear();
+        document.getElementById("currentyear").innerHTML = `${year}`;
+    </script>
+</body>
+</html>

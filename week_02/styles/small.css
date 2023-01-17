@@ -1,0 +1,54 @@
+/* Import Font to the pages */
+
+/*s*/
+:root {
+    /* Fonts */
+    --heading-font: 'Roboto', sans-serif;
+    --paragraph-font: Alice, Helvetica, sans-serif;
+    
+    /* Colors */
+    --primary-color:  cadetblue  ;
+    --secondary-color: #10100f ;
+    --accent1-color: #E6DDCF;
+    --accent2-color: white;
+    }
+    
+    /* Body */
+    main{
+        display: grid;
+        grid-template-columns: 0/2;
+
+    }
+     
+    picture img {
+        width: 100%;
+      }
+    
+    h1 {
+        font-family: var(--heading-font);
+        font-size:  1.5em;
+        background-color: var(--primary-color);
+        color: rgb(255, 255, 255);
+        border-radius: 5px;
+        padding: 5px;
+    }
+    h2{
+        font-family: var(--heading-font);
+    }
+    p ,a {
+        font-family: var(--paragraph-font);
+    
+    }
+    section{
+        margin: 10px;
+    }
+    
+    header,footer{
+        background-color: var(--primary-color);
+        margin-top: 20px;
+        padding: 30px;
+        border-radius: 10px ;
+        text-align: center;
+        font-size: large;
+    
+    }
