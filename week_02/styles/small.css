@@ -14,13 +14,12 @@
     }
     
     /* Body */
-    main {
-
+    main{
         display: grid;
         grid-template-columns: 1fr;
+
     }
     
-
     
     picture img {
         width: 100%;
@@ -53,4 +52,17 @@
         text-align: center;
         font-size: large;
     
+    }
+
+    /* I don´t why it doesn´t whit this data here and not in the other files */
+    @media only screen and (min-width: 60em) {
+        main {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    
+        /*************************************/
+    
+        main section:nth-child(3) {
+            grid-column: span 1;
+        }
     }
