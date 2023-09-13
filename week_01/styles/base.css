@@ -1,0 +1,114 @@
+/* Import Font to the pages */
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto:wght@100&display=swap');
+
+/*s*/
+:root {
+/* Fonts */
+--heading-font: 'Roboto', sans-serif;
+--paragraph-font: 'PT Sans', sans-serif;
+
+
+/* Colors */
+--primary-color:  cadetblue  ;
+--secondary-color: #10100f ;
+--accent1-color: #e0dbd2;
+--accent2-color: white;
+}
+
+/* Body */
+html,nav {
+    margin:0 auto;
+    padding: 0.75rem;
+    max-width: 45rem;
+
+}
+
+
+h1 {
+    font-family: var(--heading-font);
+    font-size:  1.5em;
+    color: var(--accent2-color);
+}
+h2{
+    font-family: var(--heading-font);
+    border-bottom: 3px solid var(--secondary-color)!important;
+}
+h3{
+    font-family: var(--heading-font);
+    background-color: var(--accent1-color);
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+}
+p,ul,a {
+    font-family: var(--paragraph-font);
+}
+
+
+/* header */
+header,footer{
+    background-color: var(--primary-color);
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 10px ;
+    text-align: center;
+    font-size: large;
+
+}
+
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color: var(--primary-color);
+    font-family: var(--heading-font)
+    
+}
+ 
+img {
+    width: 90px;
+    box-shadow: 1px 4px 8px ;
+  }
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+nav a {
+    padding: 35px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--accent2-color);
+
+}
+
+nav a:hover {
+    background-color: var(--accent2-color);
+    color: black;
+    border-radius: 10px ;
+
+} 
+
+/*main*/
+.card{
+    /* Form outline */
+    margin-bottom: 10px;
+    border: 1px solid var(--accent1-color);
+    border-radius: 1em;
+    text-align: center;
+}
+.card ul{
+    text-align: left;
+}
+
+/*Footer*/
+footer{
+    color: var(--accent2-color);
+
+}
+#lastmodified{
+    color:yellow;
+
+}

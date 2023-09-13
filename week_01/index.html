@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <meta name="description" content="Assignment portal for Katherine Campbell in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
-    <link type="text/css" rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/normalize.css">
+    <meta name="description" content="Assignment portal of Tomas Fontes in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <meta name="author" content="Tomas Fontes" > 
+    <link type="text/css" rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <title>wwd230 Portal Page</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+
+    <title>Tomas Fontes - WDD 230 - Web Frontend Development</title>
     
 </head>
 
@@ -19,14 +18,23 @@
 <header>
     <img src="images/me.png" alt="Tomas Fontes img">
     <h1>Tomás Fontes</h1>
+    <nav>
+        <a href="#"> Home</a>             
+        <a href="chamber/siteplan.html"> Site Plan</a>
+        <a href="chamber/"> Chamber</a>
+        <a href="https://www.byui.edu/"> BYU-Idaho</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/32?lang=eng"> Scripture</a>
+    </nav>
 </header>
+
 <main>
-    <section class="linklist">
-        <h2>WDD 230: Assignment Portal</h2>
+    <h2>WDD 230: Web Frontend Development</h2>
+    <section class="card">
+        <h3>Learning Activities</h3>
         <ul>
           <li>Lesson 02: <a href="">Title</a></li>
           <li>Lesson 03: <a href="">Title</a> </li>
-          <li>Lesson 04: <a href="">Title</a> </li>
+          <li>Lesson 04: <a href="">Title </a> </li>
           <li>Lesson 05: <a href="">Title</a> </li>
           <li>Lesson 06: <a href="">Title</a> </li>
           <li>Lesson 07: <a href="">Title</a> </li>
@@ -36,19 +44,18 @@
           <li>Lesson 11: <a href="">Title</a> </li>
         </ul>
       </section>
+    <section class="card">
+        <h3>Information</h3>
+        <p>Buenos Aires, Argentina</p>
+        <p>Time: </p>
+        <p>Page Visits: </p>
+    </section>
 </main>
 <footer>
     <p> ©<span id="currentyear"></span> | Tomas Fontes | Argentina</p>
     <p><span id = "lastmodified"></span></p>
 </footer>
-<script>
-    let date = document.lastModified;
-    document.getElementById("lastmodified").innerHTML = `Last modified : ${date}`;
-   
-    const d = new Date();
-    const year = d.getFullYear();
-    document.getElementById("currentyear").innerHTML = `${year}`;
-</script>
+<script src="scripts/getdates.js"></script>
 </body>
 </html>
 
