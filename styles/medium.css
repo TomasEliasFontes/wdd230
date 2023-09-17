@@ -1,0 +1,38 @@
+@media only screen and (max-width: 32.5em){
+    header {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr ;
+        background-color: var(--primary-color);
+        font-family: var(--heading-font)
+            
+    }
+    
+
+    
+    header img{
+        width: 120px;
+        float: none;
+        margin:auto
+    }
+    nav a{
+        padding: 15px;
+        text-align: center;
+
+        text-decoration: none;    
+        color: var(--accent2-color);   
+     
+    }
+    
+    h1{
+        font-size: 2.5em;
+        
+    
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    }
+   
