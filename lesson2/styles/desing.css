@@ -1,0 +1,61 @@
+body {
+	font-family: Roboto, helvetica, sans-serif;
+}
+/*-Main content for displey colums*/
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*Add section to separate the article and list*/
+section{
+    padding: 1rem;
+}
+
+header,
+main,
+footer {
+	max-width: 760px;
+	margin: 0 auto;
+}
+
+div.banner {
+    border: 1px solid #bbb;
+	padding: 1rem;
+	background-color: #eee;
+    font-weight: 700;
+    word-break: break-word;
+    text-align: center;
+}
+
+h1 {
+	border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+main {
+	display: grid;
+}
+
+h2 {
+    grid-column: 1/3;
+	color: navy;
+	text-align: left;
+}
+
+article p {
+	text-align: justify;
+}
+
+.callout {
+    grid-column: 1/3;
+	color:white;
+	background-color: #353535;
+	padding:1rem;
+}
+
+footer {
+	margin-top: 1rem;
+	border-top: 1px solid rgb(0, 0, 0);
+	font-size: smaller;
+	text-align: left;
+}
