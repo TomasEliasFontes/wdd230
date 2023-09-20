@@ -1,0 +1,29 @@
+/* Import font to the page */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+/* General display*/
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header, main, footer{
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid #bbb;
+    padding: 1rem;
+    background-color:lightblue;
+}
+
+/* Main */
+main{
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 1rem;
+}
+
+section{
+    padding: 1rem;
+    background-color:white;
+}
+
