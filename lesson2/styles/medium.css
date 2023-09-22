@@ -11,8 +11,16 @@
 		grid-column: span 2;
 	}
 
+	main section:nth-child(2) {
+		display: block;
+	}
+
+    main section picture {
+		display: block;
+	}
     image {
         width: 100%;
+        height: auto;
     }
 }
 

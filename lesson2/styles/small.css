@@ -1,23 +1,23 @@
 /* Import Font to the pages */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto:wght@100&display=swap');
 
 /*s*/
 :root {
     /* Fonts */
     --heading-font: 'Roboto', sans-serif;
-    --paragraph-font: Alice, Helvetica, sans-serif;
-    
+    --paragraph-font: 'PT Sans', sans-serif;
+
+
     /* Colors */
-    --primary-color:  cadetblue  ;
+    --primary-color:  #3E5684   ;
     --secondary-color: #10100f ;
-    --accent1-color: #E6DDCF;
+    --accent1-color: #e0dbd2;
     --accent2-color: white;
     }
     
     /* Body */
     main{
         display: grid;
-        grid-template-columns: 1fr;
-
     }
     
     
@@ -31,21 +31,28 @@
         background-color: var(--primary-color);
         color: rgb(255, 255, 255);
         border-radius: 5px;
+        margin: 0%;
         padding: 5px;
     }
     h2{
         font-family: var(--heading-font);
+        color: var(--accent1-color);
     }
     p ,a {
         font-family: var(--paragraph-font);
     
     }
+
     section {
+        background-color: var(--accent1-color);
+        border-radius: 5px;
+        padding: 5px;
         margin: 10px;
     }
     
     header,footer{
         background-color: var(--primary-color);
+        color: var(--accent2-color);
         margin-top: 20px;
         padding: 30px;
         border-radius: 10px ;
