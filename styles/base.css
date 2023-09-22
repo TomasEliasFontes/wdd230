@@ -51,40 +51,45 @@ p,ul,a {
 header,footer{
     background-color: var(--primary-color);
     padding-top: 20px;
-    /* padding: 30px; */
-    /* border-radius: 10px; */
     text-align: center;
     font-size: large;
-    /* padding-bottom: 20px; */
 }
 
 header {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 15px auto;
+    grid-template-rows:  auto;
     background-color: var(--primary-color);
     font-family: var(--heading-font);
+    
 }
  
-img {
-    width: 90px;
+header img {
+    width: 120px;
     box-shadow: 1px 4px 8px;
-    margin-left: 50px;
+    margin-left: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
     
 nav {
-    display: grid;
-    grid-template-columns: 1fr;
-    text-align: center;
     background-color: black;
+    justify-content: space-around;
 }
-/**nav {
+/*nav {
     display: flex;
     justify-content: space-around;
     
-}**/
+}*/
+nav ul {
+	list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
 
 nav a {
+    display: grid;
     padding: 15px;
     text-align: center;
     text-decoration: none;
@@ -99,6 +104,12 @@ nav a:hover {
 } 
 
 /*main*/
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 .card{
     /* Form outline */
     margin-bottom: 10px;
