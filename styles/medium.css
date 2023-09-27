@@ -29,7 +29,9 @@
 		padding-left: 0%;
         list-style-type: none;
 	}
-
+    nav li{
+        display: block;
+    }
     nav a{
         padding: 15px;
         text-align: center;
@@ -48,6 +50,9 @@
         font-size: 1.5em;
     }
     
+    button{
+        visibility: hidden;
+    }
     main {
 		grid-template-columns: 1fr 1fr;
 	}
@@ -65,5 +70,14 @@
         margin: 2px;
 	}
 
+    footer {
+        grid-column: 1/3;
     }
+    iframe{
+        grid-column: 1/3;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
    
