@@ -123,6 +123,7 @@ nav a {
     text-align: center;
     text-decoration: none;
     color: var(--accent2-color);
+
 }
 
 nav a:hover {
