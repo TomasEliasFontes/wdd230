@@ -20,8 +20,8 @@ Fonts are separated by a | */
   --paragraph-color-on-white: var(--accent1-color); /* paragraph text on a white background */ 
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
   --paragraph-background-color: var(--primary-color)  ;
-  --nav-link-color: var(--primary-color);
-  --nav-background-color: var(--accent2-color);
+  --nav-link-color: white;
+  --nav-background-color: var(--accent1-color);
   --nav-hover-link-color: white;
   --nav-hover-background-color: var(--primary-color);
 
@@ -80,6 +80,11 @@ p {
   width: 25%;
   height: 3em;
 }
+td.accent1{
+    color: white;
+    width: 25%;
+    height: 3em;
+  }
 
 .primary {
   background-color: var(--primary-color);
