@@ -54,7 +54,7 @@
     }
     
     main {
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr 30% ;
 	}
 
     main h2:nth-child(1) {
