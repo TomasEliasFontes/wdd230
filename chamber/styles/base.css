@@ -1,0 +1,185 @@
+/* using Google fonts  | */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&family=Titillium+Web:wght@300&display=swap');
+:root {
+  /* colors palette */
+  --primary-color: hsla(114, 30%, 41%, 1);
+  --secondary-color:hsla(55, 100%, 79%, 1);
+  --accent1-color: hsla(216, 95%, 7%, 1);
+  --accent2-color: hsla(42, 100%, 91%, 1);
+  --accent3-color: hsla(0, 0%, 84%, 1);
+
+  /* font(s) */
+  --heading-font: 'Quicksand', sans-serif;
+  --paragraph-font: 'Titillium Web', sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: var(--primary-color);  /* headlines on a white background */ 
+  --headline-color-on-color: white; /* headlines on a colored background */ 
+  --paragraph-color-on-white: var(--accent1-color); /* paragraph text on a white background */ 
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+  --paragraph-background-color: var(--primary-color)  ;
+  --nav-link-color: white;
+  --nav-background-color: var(--accent1-color);
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: var(--primary-color);
+
+}
+
+/* General */
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4em;
+  font-size: 18px;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+h2 {
+  text-align: center;
+}
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--accent1-color);
+}
+header {
+  padding-top: 1em;
+  text-align: center;
+  color: var(--paragraph-color-on-color);
+  background-color: var(--paragraph-background-color);
+}
+header > h1, header > h2 {
+  color: var(--headline-color-on-color);
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color);
+  padding: 1em;
+}
+/* navigator */
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+    background-color:var(--secondary-color);
+}
+
+#menu{
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    margin: auto;
+    border:  var(--primary-color);
+    font-size: x-large;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+}
+
+.open li {
+    display: grid;
+    width: 100%;
+}
+
+.open li a {
+    display: grid;
+}
+
+nav {
+    background-color: black;
+    justify-content: space-around;
+}
+
+nav li {
+    display: none;
+}
+
+nav ul {
+	list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+nav a {
+    display: grid;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--accent2-color);
+
+}
+
+nav a:hover {
+    background-color: var(--accent2-color);
+    color: black;
+    border-radius: 0px ;
+}
+
+/* Hero */
+#home-box img {
+    height: auto;
+    width: 100%;
+}
+
+header h1 {
+    width: auto;
+}
+
+/*main*/
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+main #weather-card{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+main #spotlights{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/*footer*/
+footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--accent2-color);
+    margin-top: 10px;
+    padding-top: 30px;
+}
+
+.links-box{
+    padding-left: 6em;
+}
+
+.social{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.contact-box p {
+    text-align: center;
+}
+
+.social img{
+    height: auto;
+    width: 90%;
+    padding-right: 10px;
+}
+.social li{
+    max-width: 100px;
+    height: auto;
+}
+
+
+
+
+
