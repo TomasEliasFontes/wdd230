@@ -122,10 +122,35 @@ nav a:hover {
     border-radius: 0px ;
 }
 
+#join{
+    color: var(--accent1-color);
+    background-color: var(--nav-link-color);
+    border-radius: 2px ;
+
+}
+
+#join:hover {
+    color: var(--accent1-color);
+    background-color: var(--secondary-color);
+    border-radius: 2px ;
+}
+
 /* Hero */
 #home-box img {
     height: auto;
     width: 100%;
+}
+
+
+
+.home-title{
+    margin-left: 2em;
+}
+
+.home-subtitle{
+    color: var(--accent1-color);
+    margin-left: 1em;
+    text-align: center;
 }
 
 header h1 {

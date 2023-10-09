@@ -51,24 +51,37 @@
         font-size: 1.5em;
     }
     
-    button{
+    #menu{
         visibility: hidden;
     }
 
+    #join{
+        color: var(--accent1-color);
+        background-color: var(--nav-link-color);
+        border-radius: 2px ;
+        position: absolute;
+        justify-self: right;
+        margin-right: 10px;
+    }
     /* Hero */
     #home-box img {
         height: auto;
         width: 100%;
     }
 
+    #home-msg {
+        position: absolute;
+        
+    }
+
+    /* main */
     main #current-card{
         display: flex;
         justify-content: center;
         margin: 2rem;
 
 	}
-
-    /* main */
+    
     main #weather-card{
         display: grid;
 		grid-template-columns: 1fr 60% ;
