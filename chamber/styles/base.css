@@ -29,7 +29,7 @@
 
 main {
   margin: 0 auto;
-  padding: 4em;
+  padding: 3em;
   font-size: 18px;
   text-align: center;
 }
@@ -66,6 +66,13 @@ hr {
     margin: 0;
 }
 
+/*Header*/
+
+header h1 {
+    width: auto;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
 
 /* navigator */
 #menu::before {
@@ -85,7 +92,7 @@ hr {
     font-size: x-large;
     position: absolute;
     top: 1.5rem;
-    right: 1.5rem;
+    left: 1.5rem;
 }
 
 .open li {
@@ -127,47 +134,91 @@ nav a:hover {
     border-radius: 0px ;
 }
 
-#join{
-    color: var(--accent1-color);
-    background-color: var(--nav-link-color);
-    border-radius: 2px ;
 
-}
-
-#join:hover {
-    color: var(--accent1-color);
-    background-color: var(--secondary-color);
-    border-radius: 2px ;
-}
-
-#mode {
-	position: absolute;
-	top: 4rem;
+/*Swisch button*/
+.switch {
+    position: absolute;
+	top: 2rem;
 	right: 1rem;
 	font-size: 2rem;
 	cursor: pointer;
-}
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--accent1-color);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px white;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
 
 /* Hero */
+#home-image{
+    padding-top: -10%;
+}
 #home-box img {
+    display: flex;
     height: auto;
     width: 100%;
 }
 
 #home-msg{
-    background-color: rgba(247, 247, 245, 0.6);
-    transform: translate(-50%, -50%);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 50%;
-    padding: 20px;
-    border-radius: 20px
+    background-color: var(--headline-color-on-color);
+    padding: 10px;
+    text-align: center;
 }
 
 .home-title{
     color: black;
     font-size:xx-large;
+    margin-top: 0;
 }
 
 .home-subtitle{
@@ -177,10 +228,18 @@ nav a:hover {
     padding: 0;
 }
 
-header h1 {
-    width: auto;
+#join{
+    color: var(--accent1-color);
+    background-color: var(--nav-link-color);
+    border-radius: 10px ;
+    box-sizing: 10px 10px;
 }
 
+#join:hover {
+    color: var(--accent1-color);
+    background-color: var(--accent3-color);
+    border-radius: 10px ;
+}
 
 /*main*/
 main {
@@ -228,7 +287,6 @@ footer{
     display: grid;
     grid-template-columns: 1fr;
     background-color: var(--accent2-color);
-    margin-top: 10px;
     padding-top: 30px;
 }
 

@@ -17,6 +17,12 @@
         border-radius: 20px
     }
     /* main */
+    main {
+        padding-left: 8em;
+        padding-right: 8em;
+
+    }
+
     main #current-card{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
