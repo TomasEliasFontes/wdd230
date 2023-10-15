@@ -69,16 +69,22 @@
         width: 100%;
     }
 
-    #home-msg {
+    #home-msg{
+        background-color: rgba(247, 247, 245, 0.6);
+        transform: translate(-50%, -50%);
         position: absolute;
-        
+        top: 50%;
+        left: 50%;
+        width: 50%;
+        padding: 20px;
+        border-radius: 20px
     }
 
     /* main */
     main #current-card{
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         justify-content: center;
-        margin: 2rem;
 
 	}
     
