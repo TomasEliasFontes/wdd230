@@ -200,9 +200,7 @@ nav a:hover {
   }
 
 /* Hero */
-#home-image{
-    padding-top: -10%;
-}
+
 #home-box img {
     display: flex;
     height: auto;
@@ -232,7 +230,6 @@ nav a:hover {
     color: var(--accent1-color);
     background-color: var(--nav-link-color);
     border-radius: 10px ;
-    box-sizing: 10px 10px;
 }
 
 #join:hover {
