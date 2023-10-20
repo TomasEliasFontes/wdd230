@@ -201,10 +201,11 @@ nav a:hover {
 
 /* Hero */
 
-#home-box img {
+#home-image img {
     display: flex;
-    height: auto;
     width: 100%;
+    height: auto;
+
 }
 
 #home-msg{
@@ -277,6 +278,16 @@ main > h2{
     border-top-left-radius: 2em;
     height: auto;
     width: 100%;
+}
+
+.company-img{
+  width: 100%;
+  height: auto;
+}
+
+#spotlights img{
+  width: 100%;
+  height: auto;
 }
 
 /*footer*/

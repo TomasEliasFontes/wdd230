@@ -1,7 +1,7 @@
 @media only screen and (min-width: 60em) {
 
     /*Header*/
-    #home-box img {
+    #home-image img {
         height: auto;
         width: 100%;
     }
@@ -52,6 +52,11 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
     
+    .company-img{
+        width: 100%;
+        height: auto;
+      }
+
     /*footer*/
     footer {
 		grid-template-columns: 30% 1fr;
