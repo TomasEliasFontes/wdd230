@@ -137,13 +137,13 @@ nav a:hover {
 
 /*Swisch button*/
 .switch {
-    position: absolute;
+  position: absolute;
 	top: 2rem;
 	right: 1rem;
 	font-size: 2rem;
 	cursor: pointer;
-    width: 60px;
-    height: 34px;
+  width: 60px;
+  height: 34px;
   }
   
   .switch input { 
@@ -260,13 +260,16 @@ main #weather-card{
 main #spotlights{
     display: grid;
     grid-template-columns: 1fr;
-    background-color: aliceblue;
-    padding: 2em;
+    gap: 2rem;
+    margin: 2em;
+    padding: 1rem;
 }
 
 main > h2{
     text-align: left;
 }
+
+/* current news */
 
 .new-day{
     margin: 1em;
@@ -283,6 +286,43 @@ main > h2{
 .company-img{
   width: 100%;
   height: auto;
+}
+
+/* weather card */
+#weather-day{
+  background-color: #ffffff
+}
+
+/*spotlight cards */
+.spotlights-card{
+  background-color: white;
+  filter: drop-shadow(0px 1px 1px #ccc);
+  border-radius: 1em;
+  padding: 1rem;
+}
+
+.spotlights-card:hover{
+  filter: drop-shadow(3px 3px 3px #ccc);
+  transition: .2s;
+}
+
+.button-box{
+  padding: 1px;
+  border-radius: 2em;
+  padding: 0.5em;
+  background-color: var(--accent2-color);
+}
+.button-box:hover{
+  background-color: #eaeaea;
+}
+
+.contact{
+  text-decoration: none;
+  color: black;
+}
+
+#spotlights p{
+  padding: 0%;
 }
 
 #spotlights img{
