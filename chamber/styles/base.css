@@ -29,7 +29,7 @@
 
 main {
   margin: 0 auto;
-  padding: 3em;
+  padding: 1em;
   font-size: 18px;
   text-align: center;
 }
@@ -44,6 +44,7 @@ h2 {
 hr {
   height: 3px;
   margin: 35px 0;
+  margin-top: 0;
   background: var(--accent1-color);
 }
 header {
@@ -62,9 +63,7 @@ p {
   padding: 1em;
 }
 
-hr {
-    margin: 0;
-}
+
 
 /*Header*/
 
@@ -200,6 +199,9 @@ nav a:hover {
   }
 
 /* Hero */
+#hero-box{
+  position:sticky;
+}
 
 #home-image img {
     display: flex;
@@ -268,7 +270,10 @@ main #spotlights{
 main > h2{
     text-align: left;
 }
-
+main h2{
+  margin: 1em;
+  margin-left: 0;
+}
 /* current news */
 
 .new-day{
