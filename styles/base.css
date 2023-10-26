@@ -33,7 +33,7 @@ h1 {
 }
 h2{
     font-family: var(--heading-font);
-    border-bottom: 3px solid var(--secondary-color)!important;
+    border-bottom: 3px solid var(--secondary-color);
 }
 h3{
     font-family: var(--heading-font);
@@ -156,12 +156,13 @@ nav a:hover {
 	opacity: 0.75;
 }
 
-.hero-label p {
+.hero-label h2 {
 	margin: 0;
 	padding: .25rem;
 	font-weight: 700;
 	font-size: 2rem;
 	font-family:"Great Vibes", serif;
+    border-bottom: 0px;
 }
 
 
