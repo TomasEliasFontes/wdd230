@@ -349,7 +349,7 @@ main > h2{
   box-shadow: 0 0 20px #333;
 }
 
-.photos-section p{
+#local-photos h4{
   padding-top: 0;
   padding-bottom: 2rem;
 }
