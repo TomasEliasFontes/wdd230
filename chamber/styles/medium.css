@@ -125,23 +125,6 @@
       }
         
     /* Discover */
-    #visit{
-        border-bottom: solid #333;
-        font-size: x-large;
-    }
-    .photo{
-        width: 100%;
-        height: auto;
-    }
-    
-    #local-photos .photo:hover {
-        box-shadow: 0 0 20px #333;
-    }
-    
-    .photos-section p{
-        padding-top: 0;
-        padding-bottom: 2rem;
-    }
     
     #discover-main {
         grid-template-columns: 30% 1fr  ;
@@ -156,25 +139,7 @@
         row-gap: 0.8rem;
         padding-top:1rem;
     }
-    
-    .side-content{
-        margin: 1rem;
-        padding: 1rem;
-        border: solid var(--accent3-color);
-    }
-    .side-content h3{
-        text-align: left;
-    }
-    .side-content p, li{
-        padding: 0;
-        text-align: justify;
-    }
-    
-    #local-photos{
-        padding: 2rem;
-        padding-top: 0;
-        margin: 0 auto;
-    }
+
     
     /* Footer */
     footer {
