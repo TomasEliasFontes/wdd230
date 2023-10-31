@@ -139,7 +139,11 @@
         row-gap: 0.8rem;
         padding-top:1rem;
     }
-
+    
+    #local-photos .photo:hover {
+        box-shadow: 0 0 20px #333;
+      }
+      
     
     /* Footer */
     footer {

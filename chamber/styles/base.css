@@ -345,10 +345,6 @@ main > h2{
   height: auto;
 }
 
-#local-photos .photo:hover {
-  box-shadow: 0 0 20px #333;
-}
-
 #local-photos h4{
   padding-top: 0;
   padding-bottom: 2rem;
