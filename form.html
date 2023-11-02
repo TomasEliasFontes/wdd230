@@ -29,7 +29,7 @@
         <h1>Tomás Fontes</h1>
         <nav class="navigation">
             <ul>
-                <li><a href="#"> Home</a></li>             
+                <li><a href="index.html"> Home</a></li>             
                 <li><a href="lesson03/chamber-site-plan.html"> Site Plan</a></li>
                 <li><a href="chamber/index.html"> Chamber</a></li>
                 <li><a href="https://www.byui.edu/"> BYU-Idaho</a></li>
@@ -38,52 +38,38 @@
         </nav>
     </header>
     <main>
-        <h1>Course Proposal Application</h1>
+        <h1>Course Application</h1>
+        <p>The * indicates a required field!</p>
         <form action="thanks.html" method="get" >
             <fieldset>
                 <legend>Applicant Information</legend>
-                <label class="top">First Name* <input type="text" name="fname" required ></label>
-                <label class="top">Last Name* <input type="text" name="lname" required ></label>
-                <label class="top">Phone <input type="tel" name="phone" placeholder="1235551234"></label>
-                <label class="top">Email*  <input type="email" name="email" placeholder="someone@gmail.com" required></label>
-                <label class="top">Website <input type="url" name="url" placeholder="https://" ></label>
+                <label class="top">Username* <input type="text" name="username" id="user" required ></label>
+                <label class="top">Password* <input type="password" name="password" id="pwd" pattern=".{8,}" title="Eight or more characters" placeholder="At least eight characters long." required ></label>
+                <label class="top">Password confirmation* <input type="password" name="password2" id="pwd2" pattern=".{8,}" title="Eight or more characters" required></label>
+                <label class="top">Email* <input type="email" name="email" pattern="[a-zA-Z0-9]+@byui\.edu" title="Please enter a valid email address" placeholder="someone@byui.edu" required></label>
             </fieldset>
 
             <fieldset>
-                <legend>Course Information</legend>
-                <div>Audience</div>
-                <label class="sbs"><input type="radio" name="audience" value="begginer"> Begginer</label>
-                <label class="sbs"><input type="radio" name="audience" value="antermediate"> Intermediate</label>
-                <label class="sbs"><input type="radio" name="audience" value="advanced"> Advanced</label>
-
-                <div>Sofware Needed</div>
-                <label class="sbs"><input type="checkbox" name="editing" value="yes"> Photo Editing</label>
-                <label class="sbs"><input type="checkbox" name="code" value="yes"> Code In </label>
-                <label class="sbs"><input type="checkbox" name="process" value="yes"> Preprocessor</label>
-                <label class="sbs"><input type="checkbox" name="client" value="yes"> FTP Client</label>
-            </fieldset>
-
-            <fieldset>
-                <legend>Funding</legend>
-                <label class="top">Anticipated Completion Date <input type="date" name="completeDate"></label>
-                <label class="top">Course Subject
-                    <select name="subject">
-                        <option value="">Please Select &#9662;</option>p
-                    <option value="Sofware"> Software Development</option>
-                    <option value="creative"> Creative Professional</option>
-                    <option value="info"> Information Technology</option>
-                    <option value="data"> Data Professional</options>
-                    <option value="construction"> Construction</option>
-                    <option value="manufacturing"> Manufacturing</option>
-                    <option value="business"> Business Professional</option>
-                    <option value="security"> Cyber Security</option>
-                    </select>
+                <legend>Page Rating</legend>
+                <label>Rate the page 1 to 10
+                <div id="rangevalue">1</div>
+                <input type="range" id="value" name="value" min="1" max="10" value="1" step="1" list="rangevalues">
+                    <datalist id="rangevalues">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </datalist>
                 </label>
-
-                <label class="top">How Many Authors <input type="number" name="authors"></label>
             </fieldset>
 
-            <input type="submit" value="Propose My Course" class="submitBtn">
+            <input type="submit" value="Propose to Us" class="submitBtn">
     </main>
     <footer>
         <p> ©<span id="currentyear"></span> | Tomas Fontes | Argentina</p>
@@ -92,6 +78,6 @@
     
     <script src="scripts/getdates.js"></script>
     <script src="scripts/menu.js"></script>
-    <script src="scripts/pageVisiti.js"></script>
+    <script src="scripts/form.js"></script>
 </body>
 </html>
