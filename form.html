@@ -40,7 +40,7 @@
     <main>
         <h1>Course Application</h1>
         <p>The * indicates a required field!</p>
-        <form action="thanks.html" method="get" >
+        <form action="thanks.html" method="get">
             <fieldset>
                 <legend>Applicant Information</legend>
                 <label class="top">Username* <input type="text" name="username" id="user" required ></label>
@@ -52,7 +52,7 @@
             <fieldset>
                 <legend>Page Rating</legend>
                 <label>Rate the page 1 to 10
-                <div id="rangevalue">1</div>
+                <label id="rangevalue">1</label>
                 <input type="range" id="value" name="value" min="1" max="10" value="1" step="1" list="rangevalues">
                     <datalist id="rangevalues">
                         <option value="1">1</option>
@@ -70,6 +70,7 @@
             </fieldset>
 
             <input type="submit" value="Propose to Us" class="submitBtn">
+        </form>
     </main>
     <footer>
         <p> ©<span id="currentyear"></span> | Tomas Fontes | Argentina</p>
