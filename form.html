@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"    content="width=device-width, initial-scale=1.0">  
+    <meta name="description" content="Assignment portal of Tomas Fontes in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <meta name="author"      content="Tomas Fontes" > 
+
+    <meta property="og:title"   content="Form To Us" />
+    <meta property="og:type"    content="website" />
+    <meta property="og:image"   content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3mWW7910MkJnJB5X7IUgMJiqdKTlzvCztLg&usqp=CAU" />
+    <meta property="og:url"     content="https://tomaseliasfontes.github.io/wdd230/form.html" />
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link type="text/css"  rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="icon"       href="favicon.ico" type="images/x-icon" />
+
+    <title>Tomas Fontes - WDD 230 - Web Frontend Development</title>
+    
+</head>
+<body>
+    <header>
+        <button id="menu" title="showMenu"></button>
+        <img src="images/me.webp" alt="Tomas Fontes img">
+        <h1>Tomás Fontes</h1>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#"> Home</a></li>             
+                <li><a href="lesson03/chamber-site-plan.html"> Site Plan</a></li>
+                <li><a href="chamber/index.html"> Chamber</a></li>
+                <li><a href="https://www.byui.edu/"> BYU-Idaho</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/32?lang=eng"> Scripture</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Course Proposal Application</h1>
+        <form action="thanks.html" method="get" >
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label class="top">First Name* <input type="text" name="fname" required ></label>
+                <label class="top">Last Name* <input type="text" name="lname" required ></label>
+                <label class="top">Phone <input type="tel" name="phone" placeholder="1235551234"></label>
+                <label class="top">Email*  <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top">Website <input type="url" name="url" placeholder="https://" ></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Course Information</legend>
+                <div>Audience</div>
+                <label class="sbs"><input type="radio" name="audience" value="begginer"> Begginer</label>
+                <label class="sbs"><input type="radio" name="audience" value="antermediate"> Intermediate</label>
+                <label class="sbs"><input type="radio" name="audience" value="advanced"> Advanced</label>
+
+                <div>Sofware Needed</div>
+                <label class="sbs"><input type="checkbox" name="editing" value="yes"> Photo Editing</label>
+                <label class="sbs"><input type="checkbox" name="code" value="yes"> Code In </label>
+                <label class="sbs"><input type="checkbox" name="process" value="yes"> Preprocessor</label>
+                <label class="sbs"><input type="checkbox" name="client" value="yes"> FTP Client</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Funding</legend>
+                <label class="top">Anticipated Completion Date <input type="date" name="completeDate"></label>
+                <label class="top">Course Subject
+                    <select name="subject">
+                        <option value="">Please Select &#9662;</option>p
+                    <option value="Sofware"> Software Development</option>
+                    <option value="creative"> Creative Professional</option>
+                    <option value="info"> Information Technology</option>
+                    <option value="data"> Data Professional</options>
+                    <option value="construction"> Construction</option>
+                    <option value="manufacturing"> Manufacturing</option>
+                    <option value="business"> Business Professional</option>
+                    <option value="security"> Cyber Security</option>
+                    </select>
+                </label>
+
+                <label class="top">How Many Authors <input type="number" name="authors"></label>
+            </fieldset>
+
+            <input type="submit" value="Propose My Course" class="submitBtn">
+    </main>
+    <footer>
+        <p> ©<span id="currentyear"></span> | Tomas Fontes | Argentina</p>
+        <p><span id = "lastmodified"></span></p>
+    </footer>
+    
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/pageVisiti.js"></script>
+</body>
+</html>
