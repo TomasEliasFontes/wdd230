@@ -2,7 +2,7 @@
     /* Colors */
 --primary-color:  #3E5684   ;
 --secondary-color: #000000 ;
---accent1-color: #9c2c13;
+--accent-color: #9c2c13;
 }
 
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
@@ -47,7 +47,7 @@ form legend{
 form label.top, form div {
     display: block;
     padding-top: 1rem;
-    color: var(--accent1-color);
+    color: var(--accent-color);
     font-size: .8rem;
 }
 
@@ -66,7 +66,7 @@ form label.top input, form label.top select {
 
 form input.submitBtn{
     border: none;
-    background-color: var(--accent1-color);
+    background-color: var(--accent-color);
     color: white;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
