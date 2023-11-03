@@ -83,6 +83,9 @@ form label.top input:required:valid{
     border-left: green solid 6px;
 }
 
+form #value{
+    display: flex;
+}
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
   content: "";
