@@ -43,16 +43,15 @@
         <form action="thanks.html" method="get">
             <fieldset>
                 <legend>Applicant Information</legend>
-                <label class="top">Username* <input type="text" name="username" id="user" required ></label>
+                <label class="top">Username* <input type="text" name="username" id="user" autocomplete="username" required ></label>
                 <label class="top">Password* <input type="password" name="password" id="pwd" pattern=".{8,}" title="Eight or more characters" placeholder="At least eight characters long." required ></label>
                 <label class="top">Password confirmation* <input type="password" name="password2" id="pwd2" pattern=".{8,}" title="Eight or more characters" required></label>
-                <label class="top">Email* <input type="email" name="email" pattern="[a-zA-Z0-9]+@byui\.edu" title="Please enter a valid email address" placeholder="someone@byui.edu" required></label>
+                <label class="top">Email* <input type="email" name="email" id="email" autocomplete="email" pattern="[a-zA-Z0-9]+@byui\.edu" title="Please enter a valid email address" placeholder="someone@byui.edu" required></label>
             </fieldset>
 
             <fieldset>
                 <legend>Page Rating</legend>
-                <label>Rate the page 1 to 10</label>
-                <div id="rangevalue">1</div>
+                <label>Rate the page 1 to 10
                 <input type="range" id="value" name="value" min="1" max="10" value="1" step="1" list="rangevalues">
                     <datalist id="rangevalues">
                         <option value="1">1</option>
@@ -66,6 +65,8 @@
                         <option value="9">9</option>
                         <option value="10">10</option>
                     </datalist>
+                </label>
+                <div id="rangevalue">1</div>
             </fieldset>
 
             <input type="submit" value="Propose to Us" class="submitBtn">
