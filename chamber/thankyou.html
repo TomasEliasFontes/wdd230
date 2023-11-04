@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"    content="width=device-width, initial-scale=1.0">  
+    <meta name="description" content="Assignment portal of Tomas Fontes in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <meta name="author"      content="Tomas Fontes" > 
+    <title>WDD 230 - Campana Chamber of Commerce</title>
+
+
+    <link type="text/css" rel="stylesheet" href="styles/normalize.css">
+    <link type="text/css" rel="stylesheet" href="styles/base.css">
+    <link type="text/css" rel="stylesheet" href="styles/medium.css">
+    <link type="text/css" rel="stylesheet" href="styles/larger.css">
+    <link rel="icon"      href="favicon.ico" type="images/x-icon" />
+
+</head>
+<body>
+    <header>
+        <button id="menu" title="showMenu"></button>
+        <img src="images/logo-image.webp" alt="Logo img" width="145" height="90">
+        <h1>Campana Chamber <br>of Commerce</h1>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>             
+                <li><a href="#">Discover</a></li>
+                <li><a href="">Directory</a></li>
+                <li><a href="">Join</a></li>
+            </ul>
+        </nav>
+        <label class="switch" for="toggledarkmode">
+            <input type="checkbox" name="toggledarkmode" aria-label="toggledarkmode" id="toggledarkmode">
+            <span class="slider round"></span>
+        </label>
+    </header>
+    <main id="thanks">
+        <h2>Thanks for Join Us, We are contact you later</h2>            
+        
+    </main>
+    <footer>
+        <div class="links-box">
+            <img src="images/logo-image.webp" alt="logo image"  width="145" height="90" loading="lazy">
+            <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="">Discover</a></li>
+                <li><a href="">Directory</a></li>
+                <li><a href="">Join</a></li>
+            </ul>
+        </div>
+            <div class="contact-box">
+                <p>
+                    Contact: chamberofcommerce@campana.com.ar<br>
+                    Location: Campana, Bs As, 11111 street<br>
+                    Number:+58 999 999 999
+                </p>
+                <ul class="social">
+                    <li><a href="https://www.facebook.com" target="_blank"><img src="images/facebook.webp" alt="facebook ico" width="1" height="1" loading="lazy"></a></li>
+                    <li><a href="https://www.whatsapp.com" target="_blank"><img src="images/whatsapp.webp" alt="whatsapp ico" width="1" height="1" loading="lazy"></a></li>
+                    <li><a href="https://www.youtube.com" target="_blank"><img src="images/youtube.webp" alt="youtube ico" width="1" height="1" loading="lazy"></a></li>
+                    <li><a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.webp" alt="linkedin ico" width="1" height="1" loading="lazy"></a></li>
+                </ul>
+            </div>
+        <div class="copy-box">
+            <hr>
+            <p> ©<span id="currentyear"></span> | Campana Chamber of Commerce | Argentina | WDD-230 Project</p>
+            <p><span id = "lastmodified"></span></p>
+        </div>
+
+    </footer>
+<script src="scripts/menu.js"></script>
+<script src="scripts/darkmode.js"></script>
+</body>
+</html>
