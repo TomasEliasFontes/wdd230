@@ -1,0 +1,28 @@
+{
+    "familyName": "Villagra",
+    "dateMoved": "07/01/2022",
+    "familyNumber": 5,
+    "visited": true,
+    "familyMembers": [
+        {
+            "name": "Juan",
+            "gender": "Male",
+            "birthdate": "25/05/1999"
+        },
+        {
+            "name": "ELisa",
+            "gender": "Woman",
+            "birthdate": "15/12/2002"
+        },
+        {
+            "name": "Tomas",
+            "gender": "Male",
+            "birthdate": "10/28/2001"
+        },
+        {
+            "name": "Sofia",
+            "gender": "Woman",
+            "birthdate": "09/08/2000"
+        }
+    ]
+}
