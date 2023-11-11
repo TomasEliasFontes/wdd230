@@ -1,4 +1,4 @@
-const url = 'https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json';
+const url = 'https://tomaseliasfontes.github.io/chamber/data/members.json';
 const cards = document.querySelector('#cards');
 
 async function getProphetData(url) {
