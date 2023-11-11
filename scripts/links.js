@@ -5,28 +5,26 @@ const linkList = document.querySelector("#linkList");
 async function getLinks() {
     const response = await fetch(linksURL);
     const data = await response.json();
-    displayLinks(data.lessons);
-
+    // console.log(data.lessons);
+    displayLinks(data.lessons);    
   }
 
 const displayLinks = (weeks) => {
     weeks.forEach( (week) => {
         let listItem = document.createElement("li");
-        listItem.innerText = `${week.lesson}: `;
-        listItem.setAttribute("class", "items");
         let innerLinks = week.links;
-        innerLinks.forEach((link) => {
-            console.log(link);
-            const listTag = document.createElement("a");
-            listTag.setAttribute("href", link.url);
-            listTag.setAttribute("target", "_blank");
-            listTag.innerText = `${link.title}`;
-            listItem.appendChild(listTag);
 
-            // index != innerLinks.length - 1
+        listItem.textContent = `Lesson ${week.lesson}: `;
+
+        innerLinks.forEach((link) => {
+            let links = document.createElement("a");
+
+            links.setAttribute("href", link.url);
+            links.textContent = `${link.title}`;
+            listItem.appendChild(links);
+
             if (link != innerLinks.at(-1)) {
-                // Check if it's not the last link
-                listItem.appendChild(document.createTextNode(" | ")); // Append the pipe separator
+                listItem.append(" | ");
             }
         })
         linkList.appendChild(listItem);
