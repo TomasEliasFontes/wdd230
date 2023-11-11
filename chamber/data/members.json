@@ -1,0 +1,75 @@
+{
+    "members": [{
+        "name": "Argentina Day",
+        "address": "Street 9, Number 01",
+        "phone": "+99 9999 9999",
+        "website": "ArgentinaDay.com",
+        "logo": "images/argentinaday.webp",
+        "membership": "NP",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi cumque, sunt nam dolorum, voluptas repudiandae ut ad harum vel blanditiis reiciendis"
+    },
+    {
+        "name": "Campo Campana",
+        "address": "Av. lorem, Number 01, Office 001",
+        "phone": "+99 9999 9999",
+        "website": "CampoCampana.com",
+        "logo": "images/Cam.webp",
+        "membership": "Gold",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi cumque, sunt nam dolorum, voluptas repudiandae ut ad harum vel blanditiis reiciendis"
+    },
+    {
+        "name": "Envio Cam",
+        "address": "Street 10, Number 10, Floor 10",
+        "phone": "+99 9999 9999",
+        "website": "EnvioCam.com",
+        "logo": "images/envio.webp",
+        "membership": "Silver",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi cumque, sunt nam dolorum, voluptas repudiandae ut ad harum vel blanditiis reiciendis"
+    },
+    {
+        "name": "Costa Fish",
+        "address": "Av lorem, Number 999, floor 01",
+        "phone": "+99 9999 9999",
+        "website": "CostaFish.com",
+        "logo": "images/full.webp",
+        "membership": "Bronze",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi cumque, sunt nam dolorum, voluptas repudiandae ut ad harum vel blanditiis reiciendis"
+    },
+    {
+        "name": "Inds Campana",
+        "address": "Av. lorem 999",
+        "phone": "+99 9999 9999",
+        "website": "IndsCampana.com",
+        "logo": "images/inds.webp",
+        "membership": "NP",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi cumque, sunt nam dolorum, voluptas repudiandae ut ad harum vel blanditiis reiciendis"
+    },
+    {
+        "name": "Campana Park",
+        "address": "Street 01, Number 01, Floor 10",
+        "phone": "+99 9999 9999",
+        "website": "CampanaPark.com",
+        "logo": "images/park.webp",
+        "membership": "Silver",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi cumque, sunt nam dolorum, voluptas repudiandae ut ad harum vel blanditiis reiciendis"
+    },
+    {
+        "name": "Puerto Nuevo",
+        "address": "Cost Campana, between 01 and 09 Street, Number 999",
+        "phone": "+99 9999 9999",
+        "website": "PuertoNuevo.com",
+        "logo": "images/puerto.webp",
+        "membership": "Gold",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi cumque, sunt nam dolorum, voluptas repudiandae ut ad harum vel blanditiis reiciendis"
+    },
+    {
+        "name": "Valera HR Services",
+        "address": "Calle 8, Edificio Las Acacias, Piso 5, Oficina 501",
+        "phone": "+99 9999 9999",
+        "website": "valerahrservices.com",
+        "logo": "images/hrval.webp",
+        "membership": "Bronze",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi cumque, sunt nam dolorum, voluptas repudiandae ut ad harum vel blanditiis reiciendis"
+    }
+]
+}
