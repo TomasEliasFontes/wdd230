@@ -22,30 +22,23 @@ const displayMembers = (members) => {
 
         card.setAttribute('class', 'member-card');
 
-        name.setAttribute('class', 'm-name');
+        name.setAttribute('class', 'name');
         name.textContent = member.name;
 
-        address.setAttribute('class', 'm-address');
+        address.setAttribute('class', 'address');
         address.textContent = member.address;
 
-        phone.setAttribute('class', 'm-phone');
+        phone.setAttribute('class', 'phone');
+        phone.setAttribute('href', `${member.phone}`);
         phone.textContent = member.phone;
-        phone.setAttribute('href', `tel:${member.phone}`);
 
-        pageUrl.setAttribute('class', 'm-url');
+        pageUrl.setAttribute('class', 'url');
         pageUrl.textContent = member.url;
         pageUrl.setAttribute('href', `${member.url}`);
-        pageUrl.setAttribute('target', '_blank');
 
-        logo.setAttribute('class', 'main-logo');
         logo.setAttribute('src', member.logo);
-        logo.setAttribute('alt', `Logo of ${member.name}`);
+        logo.setAttribute('alt', `${member.name}`);
         logo.setAttribute('loading', 'lazy');
-
-        membership.setAttribute('class', 'm-lvl');
-        membership.textContent = member.membershipLvl;
-
-
 
         card.appendChild(name);
         card.appendChild(logo);
