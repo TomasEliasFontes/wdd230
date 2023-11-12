@@ -444,6 +444,7 @@ main > h2{
   background-color: #eaeaea83;
   padding: 20px;
   border-radius: 2em;
+  box-shadow: #999 0 3px 4px 0px;
 }
 
 .grid img {
