@@ -144,6 +144,16 @@
         box-shadow: 0 0 20px #333;
       }
       
+    /* directory */
+
+    .list section {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        margin: 0;
+        padding: 0.25rem;
+        text-align: end;
+    }
+      
     /* join */
     
     #join-main{
