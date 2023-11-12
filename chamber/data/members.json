@@ -31,7 +31,7 @@
         "address": "Av lorem, Number 999, floor 01",
         "phone": "+99 9999 9999",
         "website": "CostaFish.com",
-        "logo": "images/full.webp",
+        "logo": "images/fish.webp",
         "membership": "Bronze",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi cumque, sunt nam dolorum, voluptas repudiandae ut ad harum vel blanditiis reiciendis"
     },
@@ -63,11 +63,11 @@
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi cumque, sunt nam dolorum, voluptas repudiandae ut ad harum vel blanditiis reiciendis"
     },
     {
-        "name": "Valera HR Services",
-        "address": "Calle 8, Edificio Las Acacias, Piso 5, Oficina 501",
+        "name": "Full Campo",
+        "address": "Street 09, Number 09, Floor 10",
         "phone": "+99 9999 9999",
-        "website": "valerahrservices.com",
-        "logo": "images/hrval.webp",
+        "website": "FullCampo.com",
+        "logo": "images/full.webp",
         "membership": "Bronze",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi cumque, sunt nam dolorum, voluptas repudiandae ut ad harum vel blanditiis reiciendis"
     }
