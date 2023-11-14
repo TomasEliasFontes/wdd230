@@ -126,12 +126,8 @@
             "lesson": "10",
             "links": [
               {
-                "url":"",
-                "title":""
-              },
-              {
-                "url":"",
-                "title":""
+                "url":"https://tomaseliasfontes.github.io/wdd230/lesson10/weather.html",
+                "title":"Weather API"
               }
             ]
         

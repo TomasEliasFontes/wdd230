@@ -166,12 +166,12 @@ nav a:hover {
 }
 
 
-
 main {
     display: grid;
     grid-template-columns: 1fr;
 }
 
+/* Fist Card*/
 .card{
     /* Form outline */
     margin-bottom: 10px;
@@ -179,14 +179,26 @@ main {
     border-radius: 1em;
     text-align: center;
 }
+
 .card ul{
     text-align: left;
 }
+
+/* Second Card*/
+figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--paragraph-font);
+    text-transform: capitalize;
+    margin: 0;
+}
+
+/* Iframe */
 iframe{
     width: 100%;
     margin-bottom: 10px;
 }
-
 
 /*Footer*/
 footer{
