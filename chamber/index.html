@@ -26,6 +26,14 @@
         <button id="menu" title="showMenu"></button>
         <img src="images/logo-image.webp" alt="Logo img">
         <h1>Campana Chamber <br>of Commerce</h1>
+        <div id="banner-container">
+            <button title="close" id="close">X</button>
+            <div class="banner">
+              <h2>Meet Campana Chamber of Commerce</h2>
+              <p>Wednsday 7:00 pm Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum temporibus tenetur, vero cumque illo maiores omnis? Exercitationem rem aperiam, similique ratione sint magnam eligendi iste.</p>
+              <p>We hope to see you there!</p>
+            </div>
+        </div>
         <nav class="navigation">
             <ul>
                 <li><a href="#">Home</a></li>             
@@ -42,9 +50,9 @@
     <div id="hero-box">
         <div id="home-image">  
             <picture>
-                <source srcset="images/wdd230-org-small.webp" media="(max-width: 550px)">
-                <source srcset="images/wdd230-org-medium.webp" media="(max-width: 1000px)">
-                <img src="images/wdd230-org-large.webp" alt="hero image campana" width="16" height="9">
+                <source srcset="images/home-image-small.webp" media="(max-width: 550px)">
+                <source srcset="images/home-image-medium.webp" media="(max-width: 1000px)">
+                <img src="images/home-image.webp" alt="hero image campana" width="16" height="9">
             </picture>
         </div>
         <section id="home-msg">
@@ -54,7 +62,7 @@
         </section>
     </div>
     <main>
-        <h2 id="main-title">Events</h2><hr>
+        <h2 class="main-title">Events</h2><hr>
         <div id="current-card">
             <section class="new-day">
                 <img class="new-img" src="images/new1.webp" alt="new">
@@ -74,38 +82,24 @@
                 <p>This new month begins the markets with natural and organic products, promoted for all citizens and visits to be able to taste the exquisite bell delicacies.</p>
             </section>
         </div>
-        <h2 id="main-title">Time in the zone</h2><hr>
+        <h2 class="main-title">Time in the zone</h2><hr>
         <div id="weather-card">
             <section id="weather-day">
-                <h3>Wind Chill</h3>
-                <p>Temperature: <a class="temp">30</a></p>
-                <p>Wind Speed: <a class="wind-speed">5</a></p>
-                <p class="wind-chill"></p>
+                <h2>Current Weather</h2>
+                <p>The current temperature in Campana is <span id="current-temp"></span></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
             </section>
-            <div id="weather-week">
-                <section class="day-card">
-                    <h3>Information</h3>
-                    <p>Buenos Aires, Argentina</p>
-                    <p>Time: </p>
-                </section>
-                <section class="day-card">
-                    <h3>Information</h3>
-                    <p>Buenos Aires, Argentina</p>
-                    <p>Time: </p>
-                </section>
-                <section class="day-card">
-                    <h3>Information</h3>
-                    <p>Buenos Aires, Argentina</p>
-                    <p>Time: </p>
-                </section>
-                <section class="day-card">
-                    <h3>Information</h3>
-                    <p>Buenos Aires, Argentina</p>
-                    <p>Time: </p>
-                </section>
-            </div>
+            <section id="weather-week">
+                <h2>Forecast 4 days</h2>
+                <ul id = "weather-cards">
+
+                </ul>
+            </section>
         </div>
-        <h2 id="main-title">Companys with Us</h2><hr>
+        <h2 class="main-title">Companys with Us</h2><hr>
         <div id="spotlights">
             <section class="spotlights-card">
                 <img class="comapany-img" src="images/argentinaday.png" alt="argentina day company" loading="lazy">
@@ -188,5 +182,7 @@
 <script src="scripts/menu.js"></script>
 <script src="scripts/darkmode.js"></script>
 <script src="scripts/windchill.js"></script>
+<script src="scripts/weather.js"></script>
+<script src="scripts/banner.js"></script>
 </body>
 </html>

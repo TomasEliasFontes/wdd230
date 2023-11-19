@@ -5,7 +5,7 @@ const captionDesc = document.querySelector('figcaption');
 
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.64&units=imperial&appid=0aa3f21cc59fecbbbe7cb27b71f722f5';
 
-function displayResults(data) {
+function displayResults() {
     currentTemp.innerHTML = `${data.main.temp}&deg;F`;
     const iconSrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     let desc = data.weather[0].description;

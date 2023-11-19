@@ -30,7 +30,7 @@
     
     /*Main weather*/
     main #weather-card{
-		grid-template-columns: 1fr 60% ;
+		grid-template-columns: 1fr 70% ;
 
 	}
     main #weather-day:nth-child(1) {
@@ -43,7 +43,7 @@
 
     main #weather-week{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
     }
     
     /*Main spotlights*/

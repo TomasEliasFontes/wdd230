@@ -30,7 +30,6 @@
 
 main {
   margin: 0 auto;
-  padding: 1em;
   font-size: 18px;
   text-align: center;
 }
@@ -58,6 +57,15 @@ header > h1, header > h2 {
   color: var(--headline-color-on-color);
 }
 
+h2.main-title, hr{
+  margin: 1rem;
+}
+
+h2.main-title{
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+
 p {
   font-family: var(--paragraph-font);
   color: var(--paragraph-color);
@@ -74,7 +82,32 @@ header h1 {
     padding-bottom: 10px;
 }
 
-/* navigator */
+/* NAVIGATOR */
+
+/* banner */
+#banner-container {
+  top: 30%;
+  margin: 10px;
+  padding: 10px;
+  position: static;
+  background: white;
+  color: black;
+  display: flex;
+  border: #333 10px solid;
+}
+.banner p{
+  margin: 0;
+  padding: 5px;
+}
+#close{
+  display: flex;
+  width: 25px;
+  height: 25px;
+  background: none;
+  border: none;
+}
+
+/* menu */
 #menu::before {
     content: "☰";
 }
@@ -201,7 +234,7 @@ nav a:hover {
 
 /* Hero */
 #hero-box{
-  position:sticky;
+  position:relative;
 }
 
 #home-image img {
@@ -242,7 +275,7 @@ nav a:hover {
     border-radius: 10px ;
 }
 
-/*main*/
+/* MAIN */
 main {
     display: grid;
     grid-template-columns: 1fr;
@@ -252,14 +285,13 @@ main #current-card{
     display: grid;
     grid-template-columns: 1fr;
 }
+
 main #weather-card{
     display: grid;
     grid-template-columns: 1fr;
-    background-color: aliceblue;
-    padding: 2em;
-
-
+    background-color: rgb(255, 255, 255);
 }
+
 main #spotlights{
     display: grid;
     grid-template-columns: 1fr;
@@ -295,10 +327,34 @@ main > h2{
 }
 
 /* weather card */
+#weather-card{
+margin: 1rem;
+}
 #weather-day{
-  background-color: #ffffff
+  background-color: #ffffff;
+  border-radius: 2em;
+  box-shadow: 1px 2px 4px 0px #333;
 }
 
+#weather-icon{
+  width:100px;
+}
+
+#weather-week{
+  margin-top: 2em;
+  border-radius: 2em;
+  box-shadow: 1px 2px 4px 0px #333;
+}
+
+#weather-cards{
+  padding: 0px !important;
+}
+
+#weather-cards li{
+  padding: 10px;
+  list-style-type: none;
+  text-align: center;
+}
 /*spotlight cards */
 .spotlights-card{
   background-color: white;
@@ -607,7 +663,7 @@ form label.sbs{
   margin-bottom: 100px;
 }
 
-/*footer*/
+/*FOOTER*/
 footer{
     display: grid;
     grid-template-columns: 1fr;
