@@ -369,7 +369,7 @@ margin: 1rem;
 }
 
 .button-box{
-  padding: 1px;
+  margin-top: 10px;
   border-radius: 2em;
   padding: 0.5em;
   background-color: var(--accent2-color);
