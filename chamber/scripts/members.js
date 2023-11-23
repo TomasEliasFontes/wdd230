@@ -23,18 +23,18 @@ const displayMembers = (members) => {
         card.setAttribute('class', 'member-card');
 
         name.setAttribute('class', 'name');
-        name.textContent = member.name;
+        name.innerHTML = member.name;
 
         address.setAttribute('class', 'address');
-        address.textContent = member.address;
+        address.innerHTML = member.address;
 
         phone.setAttribute('class', 'phone');
         phone.setAttribute('href', `${member.phone}`);
-        phone.textContent = member.phone;
+        phone.innerHTML = `${member.phone} <br>`;
 
         pageUrl.setAttribute('class', 'url');
-        pageUrl.textContent = member.url;
-        pageUrl.setAttribute('href', `${member.url}`);
+        pageUrl.innerHTML = member.website;
+        pageUrl.setAttribute('href', `${member.website}`);
 
         logo.setAttribute('src', member.logo);
         logo.setAttribute('alt', `${member.name}`);

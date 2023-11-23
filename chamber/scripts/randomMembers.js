@@ -52,7 +52,7 @@ const displayMembers = (members) => {
         pageUrl.textContent = member.website;
 
         logo.setAttribute('src', member.logo);
-        logo.setAttribute('alt', `${member.name}`);
+        logo.setAttribute('alt', `logo of ${member.name}`);
         logo.setAttribute('loading', 'lazy');
 
         card.appendChild(name);
