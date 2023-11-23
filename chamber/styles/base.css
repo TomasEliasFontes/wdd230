@@ -94,22 +94,24 @@ header h1 {
   z-index: 1;
   display: flex;
   width: 90%;
-  height: 55%;
+  height: 90%;
   background: rgba(255, 255, 255, 0.95);
   color: rgb(255, 255, 255);
   border: #7f7f7f 10px solid;
   font-size: x-large;
 
 }
+
 .banner{
   margin: 2rem;
-  padding-top: 50px;
 }
+
 .banner p{
   margin: 0;
   padding: 5px;
   color: black;
 }
+
 #close{
   display: flex;
   font-size: xx-large;
