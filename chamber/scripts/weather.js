@@ -3,7 +3,7 @@ const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=-34.6&lon=-58.37&units=metric&appid=0aa3f21cc59fecbbbe7cb27b71f722f5';
 
-const foreContainer = document.querySelector("#weather-cards")
+const foreContainer = document.querySelector("#weather-days")
 const forecast = "https://api.openweathermap.org/data/2.5/forecast?lat=-34.6&lon=-58.37&units=metric&appid=e06b8e26b0196b0b45076eb823e87a82"
 
 
