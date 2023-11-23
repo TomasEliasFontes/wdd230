@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0");
 :root {
   /* colors palette */
-  --primary-color: rgb(79, 136, 73);
+  --primary-color: rgb(70, 130, 70);
   --secondary-color:hsla(55, 100%, 79%, 1);
   --accent1-color: hsla(216, 95%, 7%, 1);
   --accent2-color: hsla(42, 100%, 91%, 1);
