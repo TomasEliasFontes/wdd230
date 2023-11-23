@@ -66,8 +66,9 @@ h2.main-title{
   margin-bottom: 0;
 }
 
-p {
+p, a {
   font-family: var(--paragraph-font);
+  text-decoration: none;
   color: var(--paragraph-color);
   padding: 1em;
 }
@@ -86,23 +87,37 @@ header h1 {
 
 /* banner */
 #banner-container {
-  top: 30%;
-  margin: 10px;
-  padding: 10px;
-  position: static;
-  background: white;
-  color: black;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
   display: flex;
-  border: #333 10px solid;
+  width: 90%;
+  height: 55%;
+  background: rgba(255, 255, 255, 0.95);
+  color: rgb(255, 255, 255);
+  border: #7f7f7f 10px solid;
+  font-size: x-large;
+
+}
+.banner{
+  margin: 2rem;
+  padding-top: 50px;
 }
 .banner p{
   margin: 0;
   padding: 5px;
+  color: black;
 }
 #close{
   display: flex;
-  width: 25px;
-  height: 25px;
+  font-size: xx-large;
+  font-family: var(--heading-font);
+  position: absolute;
+  top: 2.5rem;
+  right: 1.5rem;
+  color: black;
   background: none;
   border: none;
 }
@@ -264,15 +279,23 @@ nav a:hover {
 }
 
 #join{
-    color: var(--accent1-color);
-    background-color: var(--nav-link-color);
-    border-radius: 10px ;
+    width: 100px;
+    height: 50px;
+    background-color: var(--accent2-color);
+    font-size:xx-large;
+    border-radius: 20px ;
+    display:inline-block;
+}
+
+#join a{
+  font-family: var(--heading-font);
+  padding: 0;
 }
 
 #join:hover {
     color: var(--accent1-color);
     background-color: var(--accent3-color);
-    border-radius: 10px ;
+    border-radius: 20px ;
 }
 
 /* MAIN */
@@ -346,11 +369,13 @@ margin: 1rem;
   box-shadow: 1px 2px 4px 0px #333;
 }
 
-#weather-cards{
+#weather-days{
+  background-color: white;
   padding: 0px !important;
+  border-radius: 2rem;
 }
 
-#weather-cards li{
+#weather-days li{
   padding: 10px;
   list-style-type: none;
   text-align: center;
@@ -431,6 +456,7 @@ margin: 1rem;
 .side-content p, li{
   padding: 0;
   text-align: justify;
+  font-family: var(--paragraph-font);
 }
 
 #local-photos{
@@ -439,13 +465,8 @@ margin: 1rem;
 }
 
 /* DIRECTORY */
-
-.directory-main {
-	margin: 1rem auto;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	padding: 0.5rem;
-	background-color: #eaeaea;
-	text-align: center;
+#directory-main {
+	padding: 2rem ;
 }
 
 .button-directory {
@@ -485,6 +506,7 @@ margin: 1rem;
 	font-size: 0.85rem;
 	color: navy;
 	letter-spacing: 1.1pt;
+  padding: 0;
 }
 
 .grid {
@@ -625,6 +647,7 @@ form label.top input, form label.top select {
 form div{
   margin-top: 20px;
   margin-bottom: 8px;
+  font-family: var(--paragraph-font);
 }
 
 form input.submitBtn{
@@ -655,6 +678,8 @@ form label.top input:required:valid{
 form label.sbs{
   display: block;
   padding: 2px;
+  font-family: var(--paragraph-font);
+
 }
 /* thanksyou*/
 #thanks h2{
@@ -679,6 +704,10 @@ footer{
     display: flex;
     list-style-type: none;
     justify-content: center;
+    padding: 0;
+}
+.social a{
+  padding: 0;
 }
 
 .contact-box p {
@@ -691,7 +720,7 @@ footer{
     padding-right: 10px;
 }
 .social li{
-    max-width: 100px;
+    max-width: 60px;
     height: auto;
 }
 

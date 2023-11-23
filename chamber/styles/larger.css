@@ -28,6 +28,11 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
     
+    /* Join button */
+    #join{
+        top: 85%;
+        left: 45%;
+    }
     /*Main weather*/
     main #weather-card{
 		grid-template-columns: 1fr 70% ;
@@ -64,7 +69,7 @@
     #join-main{
         grid-template-columns: 1fr 40% ;
         column-gap: 1rem;
-        margin: 0 100px 0;
+        padding: 0 150px 0;
     }
     #join-main h1{
         grid-column: 1/3;
