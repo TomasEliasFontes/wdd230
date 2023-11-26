@@ -683,6 +683,11 @@ form label.sbs{
   font-family: var(--paragraph-font);
 
 }
+
+#timestamp{
+  visibility: hidden;
+}
+
 /* thanksyou*/
 #thanks h2{
   text-align: center;
