@@ -38,19 +38,6 @@ modeButton.addEventListener("click", () => {
         h4[4].style.color = "#fff";
         h4[5].style.color = "#fff";
 
-        // Main News colors
-        h3News[0].style.color = "#fff";
-        h3News[1].style.color = "#fff";
-        h3News[2].style.color = "#fff";
-        newDay[0].style.background ="#303030";
-        newDay[1].style.background ="#303030";
-        newDay[2].style.background ="#303030";
-        newDayTitle[0].style.color = "#fff";
-        newDayTitle[1].style.color = "#fff";
-        newDayTitle[2].style.color = "#fff";
-        newDayParaf[0].style.color = "#fff";
-        newDayParaf[1].style.color = "#fff";
-        newDayParaf[2].style.color = "#fff";
 
         //Button change
 		modeButton.textContent = "";
