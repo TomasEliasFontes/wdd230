@@ -53,6 +53,8 @@ const displayMembers = (members) => {
 
         logo.setAttribute('src', member.logo);
         logo.setAttribute('alt', `logo of ${member.name}`);
+        logo.setAttribute('width','1')
+        logo.setAttribute('height','1')
         logo.setAttribute('loading', 'lazy');
 
         card.appendChild(name);

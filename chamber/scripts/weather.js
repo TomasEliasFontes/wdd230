@@ -13,6 +13,8 @@ function displayResults(data) {
     let desc = data.weather[0].description;
     weatherIcon.setAttribute('src', iconSrc);
     weatherIcon.setAttribute('alt',`${desc} icon`);
+    weatherIcon.setAttribute('width','100');
+    weatherIcon.setAttribute('height','100');
     currentTemp.innerHTML = `${data.main.temp}&deg;C - ${desc}`;
 
 }
@@ -27,7 +29,7 @@ function displayForecast(data){
         let day = getDate(data.list[element].dt_txt);
 
         li.innerHTML = `${day}<br>${data.list[element].main.temp}&deg;C - ${desc}
-        <br> <img id="weather-icon" src="${iconSrc}" alt="${desc}">`;
+        <br> <img id="weather-icon" src="${iconSrc}" alt="${desc}" width = "100" height = "100" >`;
 
         foreContainer.appendChild(li);
         element += 8;
