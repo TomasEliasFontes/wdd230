@@ -21,6 +21,88 @@
     <link rel="icon"      href="images/motorcycle.ico" type="images/x-icon" />
 </head>
 <body>
-    
+    <header>
+        <div id="banner-container">
+            <button title="close" id="close">X</button>
+            <div class="banner">
+              <h2>Weather Alert from Government</h2>
+              <p>Alert Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum temporibus tenetur, vero cumque illo maiores omnis?</p>
+            </div>
+        </div>
+        <button id="menu" title="showMenu"></button>
+        <img src="images/scooter-logo.webp" alt="Logo Scoots Rental img"  width="145" height="145" loading="lazy">
+        <nav class="navigation">
+            <ul>
+                <li><a id="page-button" href="index.html">Home</a></li>             
+                <li><a class="nav" href="rentals.html">Rentals</a></li>
+                <li><a class="nav" href="reservations.html">Reservations</a></li>
+                <li><a class="nav" href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <ul class="social-header">
+            <li><a href="https://www.instagram.com" target="_blank"><img src="images/instagram.webp" alt="instagram ico" width="50" height="50" loading="lazy"></a></li>
+            <li><a href="https://www.facebook.com" target="_blank"><img src="images/facebook.webp" alt="facebook ico"  width="50" height="50" loading="lazy"></a></li>
+            <li><a href="https://www.youtube.com" target="_blank"><img src="images/youtube.webp" alt="youtube ico"  width="50" height="50" loading="lazy"></a></li>
+            <li><a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.webp" alt="linkedin ico"  width="50" height="50" loading="lazy"></a></li>
+        </ul>
+    </header>
+    <main>
+        <div id="hero-box">
+            <div id="home-image">  
+                <picture>
+                    <source srcset="images/home-image-small.webp" media="(max-width: 550px)">
+                    <source srcset="images/home-image-medium.webp" media="(max-width: 1000px)">
+                    <img src="images/home-image.webp" alt="hero image campana" width="1150" height="600">
+                </picture>
+            </div>
+            <section id="home-msg">
+                <h2 class="home-title">Scoots Rental Commerce </h2>
+                <p class="home-subtitle">Enjoy Travel with US</p>
+                <div id="join"><a href="contact.html">Rent My Scooter</a></div>
+            </section>
+        </div>
+        <section id="types-rental" >
+
+        </section>
+        <section id="weather-card">
+
+        </section>
+        <section >
+
+        </section>
+    </main>
+    <footer>
+        <section class="links-box">
+            <img src="images/scooter-logo.webp" alt="Logo Scoots Rental img"  width="145" height="145" loading="lazy">
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>             
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </section>
+        <section class="contact-box">
+            <p>
+                Contact: scootsrental@company.com<br>
+                Address: Mexico, Conzumel, 111 street<br>
+                Number:+58 999 999 999
+            </p>
+            <ul class="social">
+                <li><a href="https://www.instagram.com" target="_blank"><img src="images/instagram.webp" alt="instagram ico" width="50" height="50" loading="lazy"></a></li>
+                <li><a href="https://www.facebook.com" target="_blank"><img src="images/facebook.webp" alt="facebook ico"  width="50" height="50" loading="lazy"></a></li>
+                <li><a href="https://www.whatsapp.com" target="_blank"><img src="images/whatsapp.webp" alt="whatsapp ico"  width="50" height="50" loading="lazy"></a></li>
+                <li><a href="https://www.youtube.com" target="_blank"><img src="images/youtube.webp" alt="youtube ico"  width="50" height="50" loading="lazy"></a></li>
+                <li><a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.webp" alt="linkedin ico"  width="50" height="50" loading="lazy"></a></li>
+            </ul>
+        </section>
+        <section class="copy-box">
+            <hr>
+            <p> ©<span id="currentyear"></span> | Scoots Rental of Commerce | Argentina | WDD-230 Project</p>
+            <p><span id = "lastmodified"></span></p>
+        </section>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 </html>
