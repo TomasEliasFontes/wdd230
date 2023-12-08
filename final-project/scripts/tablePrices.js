@@ -9,17 +9,17 @@ async function getPrices() {
     }
     const data = await response.json();
 
-    if (data.rentals && Array.isArray(data.rentals)) {
-      displayPrices(data.rentals);
+    if (data.rentalPricing && Array.isArray(data.rentalPricing)) {
+      displayPrices(data.rentalPricing);
     } else {
-      throw new Error("Invalid data format: 'rentals' array not found.");
+      throw new Error("Invalid data format: 'rentalPricing' array not found.");
     }
   } catch (error) {
     console.error("Error fetching data:", error);
   }
 }
 
-function displayPrices(rentals) {
+function displayPrices(rentalPricing) {
   // Display the rental prices in a table in the 'pricing-table-container' div
   let table = document.createElement('table');
   table.classList.add('pricing-table');
@@ -49,7 +49,7 @@ function displayPrices(rentals) {
   table.appendChild(thead);
 
   // Create table body
-  rentals.forEach((rental) => {
+  rentalPricing.forEach((rental) => {
     let row = document.createElement('tr');
     row.innerHTML = `
       <td>${rental.type}</td>
