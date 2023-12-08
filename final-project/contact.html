@@ -39,8 +39,38 @@
             <li><a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.webp" alt="linkedin ico"  width="50" height="50" loading="lazy"></a></li>
         </ul>
     </header>
-    <main>
-       
+    <main id="join-main">
+        <h1>Contact Us</h1>
+        <section id="application">
+            <form action="thankyou.html" method="get" >
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label class="top">First Name* <input type="text" name="fname" id="fname" required ></label>
+                    <label class="top">Last Name* <input type="text" name="lname" id="lname" required ></label>
+                    <label class="top">Email*  <input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
+                    <label class="top">Description: 
+                        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                    </label>
+                    <label class="bottom"><input type="hidden" name="timestamp" value="timestamp" id="input-timestamp"><span id="timestamp"></span></label>
+                </fieldset>
+
+                <input type="submit" value="Contact Us" class="submitBtn">
+
+            </form>
+        </section>
+        <section id="locations">
+            <h2>Contact Information</h2>
+            <div class="info-location">
+                <p><strong>Location 1:</strong> Playa del Carmen-Cozumel Ferry Cozumel, Q.R., México, street 100</p>
+                <p><strong>Phone:</strong> +1 (555) 1111-1111</p>
+                <iframe id="map" title="map"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115529.3804247447!2d-87.11859262034275!3d20.600472643619792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e430a3b3c73db%3A0xf1147cfcfa9097b6!2sFerry%20Cozumel!5e0!3m2!1ses!2sar!4v1701728211387!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
+            </div>
+            <div class="info-location">
+                <p><strong>Location 2:</strong> Cozumel, Q.R., México, street 111</p>
+                <p><strong>Phone:</strong> +1 (555) 9999-9999</p>
+                <iframe id="map" title="map"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103371.07373394609!2d-87.02171539016973!3d20.541758840051767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59f757fe17ab%3A0xbaa9e03de8510edb!2sParque%20Municipal%20De%20Cozumel!5e0!3m2!1ses!2sar!4v1701728404480!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
     </main>
     <footer>
         <section class="links-box">
@@ -74,6 +104,5 @@
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/menu.js"></script>
-    <script src="scripts/banner.js"></script>
 </body>
 </html>
