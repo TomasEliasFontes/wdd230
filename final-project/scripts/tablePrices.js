@@ -67,4 +67,4 @@ function displayPrices(rentals) {
   document.getElementById('pricing-table-container').appendChild(table);
 }
 
-getPrices(dataURL);
+getPrices();
