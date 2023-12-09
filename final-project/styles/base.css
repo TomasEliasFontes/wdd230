@@ -236,6 +236,34 @@ nav a:hover {
     padding: 0.5rem;
 }
 
+/* RENTAL */
+.pricing-table{
+    border-collapse: collapse;
+    margin: 1rem auto;
+    border: 1px solid black;
+    width: 80%;
+    background-color: #ddd;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+thead{
+    background-color: #173966;
+    color: white;
+}
+
+th{
+    font-family: var(--heading-font);
+    font-size: large;
+}
+
+td{
+    font-family: var(--paragraph-font);
+}
 
 /* JOIN */
 
@@ -367,7 +395,13 @@ footer{
 }
 
 .links-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 1em;
     padding-left: 6em;
+}
+.footer-links{
+    align-self: center;
 }
 
 .social{

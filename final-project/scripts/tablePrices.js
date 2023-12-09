@@ -17,17 +17,17 @@ async function getPrices() {
 }
 
 function displayPrices(rentals) {
-  // Display the rental prices in a table in the 'pricing-table-container' div
+  // Display the rental prices in a table
   let table = document.createElement('table');
   table.classList.add('pricing-table');
 
   let thead = document.createElement('thead');
   let tbody = document.createElement('tbody');
 
-  // Create table header
+  // Create header
   let headerRow = document.createElement('tr');
   headerRow.innerHTML = `
-    <th colspan="2"></th>
+    <td colspan="2"></td>
     <th colspan="2">Resevartion</th>
     <th colspan="2">Walk-in</th>
   `;
@@ -36,16 +36,16 @@ function displayPrices(rentals) {
   subRow.innerHTML = `
     <th>Rental Type</th>
     <th>Max. Persons</th>
-    <th>Half Day (3 hrs)</th>
+    <th>Half Day <br>(3 hrs)</th>
     <th>Full Day</th>
-    <th>Half Day (3 hrs)</th>
+    <th>Half Day <br>(3 hrs)</th>
     <th>Full Day</th>
   `;
   thead.appendChild(headerRow);
   thead.appendChild(subRow);
   table.appendChild(thead);
 
-  // Create table body
+  // Create body
   rentals.forEach((rental) => {
     let row = document.createElement('tr');
     row.innerHTML = `
@@ -60,7 +60,7 @@ function displayPrices(rentals) {
   });
   table.appendChild(tbody);
 
-  // Append the table to the 'pricing-table-container' div
+  // Append the table
   document.querySelector('#rental-table').appendChild(table);
 }
 
