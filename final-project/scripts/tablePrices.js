@@ -2,21 +2,18 @@ const baseURL = "https://tomaseliasfontes.github.io/wdd230/final-project";
 const dataURL = "https://tomaseliasfontes.github.io/wdd230/final-project/data/listProducts.json";
 
 async function getPrices() {
-  try {
     const response = await fetch(dataURL);
     if (!response.ok) {
       throw new Error(`Error fetching data: ${response.statusText}`);
     }
-    const data = await response.json();
 
+    const data = await response.json();
     if (data.rentals && Array.isArray(data.rentals)) {
       displayPrices(data.rentals);
-    } else {
+    } 
+    else {
       throw new Error("Invalid data format: 'rentals' array not found.");
     }
-  } catch (error) {
-    console.error("Error fetching data:", error);
-  }
 }
 
 function displayPrices(rentals) {
@@ -64,7 +61,7 @@ function displayPrices(rentals) {
   table.appendChild(tbody);
 
   // Append the table to the 'pricing-table-container' div
-  document.getElementById('pricing-table-container').appendChild(table);
+  document.querySelector('#rental-table').appendChild(table);
 }
 
 getPrices();

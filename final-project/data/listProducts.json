@@ -59,6 +59,20 @@
       "imageUrl": "images/atv.jpg"
     },
     {
+        "type": "Jeep Wrangler - 2 door",
+        "model": "Jeep",      
+        "maxPersons": 4,
+        "reservation":{
+          "halfDay":60,
+          "fullDay":85
+        },
+        "walkIn":{
+          "halfDay":70,
+          "fullDay":90
+        },
+        "imageUrl": "images/wrangler-two-dors.webp"
+    },
+    {
       "type": "Jeep Wrangler - 4 door with a/c",
       "model": "Jeep",      
       "maxPersons": 5,
@@ -71,20 +85,6 @@
         "fullDay":125
       },
       "imageUrl": "images/wrangler-four-dors.webp"
-    },
-    {
-      "type": "Jeep Wrangler - 2 door",
-      "model": "Jeep",      
-      "maxPersons": 4,
-      "reservation":{
-        "halfDay":60,
-        "fullDay":85
-      },
-      "walkIn":{
-        "halfDay":70,
-        "fullDay":90
-      },
-      "imageUrl": "images/wrangler-two-dors.webp"
     }
   ]
 }
