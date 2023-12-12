@@ -9,10 +9,10 @@
     <title>Scoot Rental</title>
 
 
-    <meta property="og:title"   content="Scoots Rental Reservations" />
+    <meta property="og:title"   content="Scoots Rental Select" />
     <meta property="og:type"    content="website"/>
     <meta property="og:image"   content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR90csVHMhRIL-2X4ZxTjPCMElQuCBb6LMFJJBfAkTvelCMVjxS_I9kzEcnnalIx3LUT0&usqp=CAU" />
-    <meta property="og:url"     content="https://tomaseliasfontes.github.io/wdd230/final-project/reservations.html" />
+    <meta property="og:url"     content="https://tomaseliasfontes.github.io/wdd230/final-project/rentals.html" />
 
     <link type="text/css" rel="stylesheet" href="styles/normalize.css">
     <link type="text/css" rel="stylesheet" href="styles/base.css">
@@ -28,7 +28,7 @@
             <ul>
                 <li><a class="nav" href="index.html">Home</a></li>             
                 <li><a class="nav" href="rentals.html">Rentals</a></li>
-                <li><a id="page-button"  href="reservations.html">Reservations</a></li>
+                <li><a id="page-button" href="reservations.html">Reservations</a></li>
                 <li><a class="nav" href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
@@ -39,8 +39,88 @@
             <li><a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.webp" alt="linkedin ico"  width="50" height="50" loading="lazy"></a></li>
         </ul>
     </header>
-    <main>
-        
+    <main id="reservation-main">
+        <div id="hero-box">
+            <div id="home-image">  
+                <picture>
+                    <source srcset="images/home-image-small.webp" media="(max-width: 550px)">
+                    <source srcset="images/home-image-medium.webp" media="(max-width: 1000px)">
+                    <img src="images/home-image.webp" alt="hero image campana" width="1150" height="600">
+                </picture>
+            </div>
+            <section id="home-msg">
+                <h2 class="home-title">Make Your Reservations </h2>
+                <p class="home-subtitle">Make your reservation NOW and enjoy your stay and adventures much more. If you have a question contact us.</p>
+                <div id="join"><a href="contact.html">Contact US</a></div>
+            </section>
+        </div>
+        <h2>Reservation <hr></h2>
+        <div id="grid-reservation">
+            <section id="application">
+                <form action="thankyou.html" method="get" >
+                    <fieldset>
+                        <legend>Applicant Information</legend>
+                        <label class="top">First Name* <input type="text" name="fname" id="fname" required ></label>
+                        <label class="top">Last Name* <input type="text" name="lname" id="lname" required ></label>
+                        <label class="top">Phone* <input type="tel" name="phone" id="phone" placeholder="+(11) 111 1111 1111 " required></label>
+                        <label class="top">Email*  <input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
+                        <label class="top">Home State or Country* <input type="text" name="country" id="country" required></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Rental Details</legend>
+                        <label class="top" for="date">Start Date*: <input type="date" id="fecha" name="fecha" required></label>
+                        <label class="top" for="period">Rental Period*: <input type="number" id="period" name="period" min="1" max="60" placeholder="days" required></label>
+                        <label class="top" for="type">Rental Type:
+                            <select class="top"  id="type" name="type" required>
+                                <option value disabled selected>Select a type  ▼</option>
+                                <option value="scooterM">Honda Metro Scooter</option>
+                                <option value="scooterD">Honda Dio Scooter</option>
+                                <option value="scooterP">Honda PCX150 Scooter</option>
+                                <option value="ATV">Honda Pioneer ATV</option>
+                                <option value="Jeep2">Jeep Wrangler - 2 door</option>
+                                <option value="Jeep4">Jeep Wrangler - 4 door with a/c</option>
+                            </select>
+                        </label>
+                        <label class="top">Cruise line (if applicable): <input type="text" name="cruise" id="cruisel" ></label>
+
+                        <label class="top">Special Accommodations/Comments: 
+                            <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                        </label>
+                        <label class="bottom"><input type="hidden" name="timestamp" value="timestamp" id="input-timestamp"><span id="timestamp"></span></label>
+                    </fieldset>
+
+                    <input type="submit" value="Booking" class="submitBtn">
+
+                </form>
+            </section>
+            <section id="rental-services">
+                <div>
+                    <h3>Rental Services and Agreements</h3>
+                    <ul>
+                    <li>A $50 security deposit is required to confirm reservations.</li>
+                    <li>
+                        A valid drivers license is required in hand at the time of rental.
+                    </li>
+                    <li>
+                        No one under the age of 12 years of age are allowed to ride on the
+                        scooters.
+                    </li>
+                    <li>Fuel charge is not included.</li>
+                    <li>Unlimited mileage.</li>
+                    <li>Liability insurance is included.</li>
+                    <li>Damage insurance is available for purchase.</li>
+                    <li>
+                        Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.
+                    </li>
+                    <li>
+                        Payment via Google Pay, Apple Pay, cash, credit card, debit card,
+                        or venmo.
+                    </li>
+                    <li>Rentals may be returned to either physical location.</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
         <section class="links-box">
@@ -74,6 +154,7 @@
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/menu.js"></script>
-    <script src="scripts/banner.js"></script>
+    <script src="scripts/"></script>
+    <script src="scripts/"></script>
 </body>
 </html>
