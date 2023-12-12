@@ -83,8 +83,39 @@
         box-shadow: 0px 0px 100px 10px #fff;
     }
 
+    /* RENTAL */
+    #models-rental {
+        margin: 2rem 8rem;
+    }
+
+    th, td {
+        border: 1px solid black;
+        padding: 0.5rem;
+        text-align: center;
+    }
+    
+    /* RESERVATIONS */
+    #grid-reservation {
+        margin: 1rem 6rem;
+        display: grid;
+		grid-template-columns: 1fr 45%;
+	}
+
+    #reservation-main h2{
+        text-align: left;
+        margin: 2rem 4rem;
+	}
+
+    #rental-services{
+        margin-left: 1rem;
+    }
+
+    #rental-services li{
+        font-size: x-large;
+    }
     /* CONTACT */
-    #join-main {
+
+    #contact-main {
         display: grid;
 		grid-template-columns: 1fr 45%;
 	}

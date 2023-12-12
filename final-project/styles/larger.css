@@ -10,6 +10,15 @@
         margin: auto;
     }
 
+    /*RENTAL*/
+    /* rental products */
+    #models-rental {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 25px;
+        align-items: center;
+    }
+
     /* CONTACT */
     #join-main {
         margin-left: 2em;
