@@ -13,12 +13,12 @@ async function getModelData() {
 
 const displayCard = (rentals) => {
     rentals.forEach((model) => {
-        // Create elements to add to the div.cards element
+        // Create elements to add to the article element
         let card = document.createElement('section');
         let type = document.createElement('h3');
         let modelImage = document.createElement('img');
 
-        // Build the h2 content out to show the model type
+        // Build the h3 content out to show the model type
         type.setAttribute('class', 'model-product')
         type.innerHTML = model.type;
 
@@ -29,11 +29,10 @@ const displayCard = (rentals) => {
         modelImage.setAttribute('width', '100%');
         modelImage.setAttribute('height', '100%');
 
-        // Append the section(card) with the created elements
         card.appendChild(type);
         card.appendChild(modelImage);
-        console.log(cards); // Agrega esta línea
         
+        // Append all the card
         cards.appendChild(card);
     });
 }
