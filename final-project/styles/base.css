@@ -56,11 +56,18 @@ header h1 {
 }
 
 header{
+    height: 50%;
     background-color: var(--primary-color);
 }
 
+/* logo header */
+header img{
+    margin: 1rem;
+}
+
 /* NAVIGATOR */
-  
+
+
 /* social header */
 .social-header{
     display: flex;
@@ -69,6 +76,12 @@ header{
     padding: 0;
     visibility: hidden;
     margin: 0;
+    height: 20px;
+    width: auto;
+}
+
+.social-header img {
+    padding: 1em;
 }
 
 /* menu */
@@ -84,11 +97,10 @@ header{
 #menu{
     background-color: var(--primary-color);
     color: var(--accent1-color);
-    margin: auto;
+    margin: 2rem auto;
     border:  var(--primary-color);
     font-size: x-large;
     position: absolute;
-    top: 1.5rem;
     right: 1.5rem;
 }
   
@@ -147,40 +159,41 @@ nav a:hover {
 
 /* banner */
 #banner-container {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
     display: flex;
-    width: 90%;
-    height: 90%;
-    background: rgba(255, 255, 255, 0.95);
+    gap: 2rem;
+    padding: 2rem;
+    background: var(--accent1-color);
     color: rgb(255, 255, 255);
-    border: #7f7f7f 10px solid;
     font-size: x-large;
 }
   
- .banner{
-    margin: 2rem;
+.banner h2{
+    color: white;
+    text-align: center;
 }
   
 .banner p{
+    text-align: center;
     margin: 0;
     padding: 5px;
-    color: black;
+    color: white;
 }
   
 #close{
     display: flex;
-    font-size: xx-large;
+    font-size: xxx-large;
     font-family: var(--heading-font);
     position: absolute;
     top: 2.5rem;
-    right: 1.5rem;
-    color: black;
+    right: 1rem;
+    color: white;
+    cursor: pointer;
     background: none;
     border: none;
+}
+
+#close:hover{
+    color: #b4b4b4;
 }
   
 /* Hero */
@@ -224,7 +237,7 @@ nav a:hover {
 
 #join a{
   font-family: var(--heading-font);
-  color: var(--secondary-color);
+  color: var(--primary-color);
   text-shadow: 2px 0 0 black;
   text-decoration: underline 2px;
   transition: 0.3s;
@@ -239,33 +252,124 @@ nav a:hover {
 /* Home rental */
 #types-rental {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 #types-rental h2 {
     margin: 2rem 4rem;
     grid-column: 1/4;
+    text-align: left;
+}
+
+.scooter{
+    margin: 2em;
+    border-end-end-radius: 2em;
+    border-top-left-radius: 2em;
+    transition: 1.5s;
+
+}
+
+.scooter:hover{
+    margin: 2em;
+    border-end-end-radius: 2em;
+    border-top-left-radius: 2em;
+    transform: scale(1.1); 
 }
 
 .scooter:nth-child(2){
     grid-column: 1/2;
-    margin: 2rem;
 }
 
 .scooter:nth-child(3){
-    grid-column: 2/3;
-    margin: 2rem;
+    grid-column: 1/2;
 }
 
 .scooter:nth-child(4){
-    grid-column: 3/4;
+    grid-column: 1/2;
+}
+
+.scooter h3,.scooter li{
+    margin: 1rem;
+    text-align: left;
+    font-family: var(--paragraph-font);
+}
+
+.home-rental-scooters{
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    box-shadow: #f2c173 2px 4px 10px;
+}
+
+.rental-button{
     margin: 2rem;
 }
 
-.scooter h3,p,li{
+.rental-button a{
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    color: white;
+}
+
+.rental-button a:hover{
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    transition: 0.5s;
+    color: rgb(0, 0, 0);
+}
+
+/* weather card */
+#weather-card{
+    text-align: left;
+    gap: 0rem 8rem;
+    margin: 2rem 2rem;
+}
+
+#weather-day{
+    text-align: center;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: #173966 2px 4px 6px;
+    margin-bottom: 2rem;
+}
+
+#weather-tomorrow{
+    text-align: center;
+    margin-left: 0;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: #173966 2px 4px 6px;
+
+
+}
+
+/* Gallery section */
+#gallery-section{
+    margin: 2rem;
     text-align: left;
 }
 
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin: 0 0;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
 
 /* RENTAL */
 .max-rental-pricing h1{
@@ -371,8 +475,6 @@ td{
     margin:1rem 2rem;
     grid-template-columns: 1fr  ;
     column-gap: 1rem;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 #contact-main h1{
@@ -505,7 +607,7 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-bottom: 1em;
-    padding-left: 6em;
+    padding-left: 2em;
 }
 .footer-links{
     align-self: center;
@@ -520,6 +622,10 @@ footer{
 .social a{
   padding: 0;
 }
+
+.social img{
+    padding: 1em;
+  }
 
 .contact-box p {
     text-align: center;
