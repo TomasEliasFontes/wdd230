@@ -47,9 +47,15 @@ p, a {
     text-decoration: none;
 }
 
+hr {
+    margin: 0 0 2rem 0;
+    grid-column: span 3;
+}
+
 /* HEADER */
 
 header h1 {
+    position: relative;
     width: auto;
     margin-bottom: 0;
     padding-bottom: 10px;
@@ -253,12 +259,14 @@ nav a:hover {
 #types-rental {
     display: grid;
     grid-template-columns: 1fr;
+    margin: 2rem 2rem;
 }
 
 #types-rental h2 {
-    margin: 2rem 4rem;
+    margin: 2rem 2rem;
     grid-column: 1/4;
     text-align: left;
+    border-bottom: black solid 1px;
 }
 
 .scooter{
@@ -374,6 +382,7 @@ nav a:hover {
 /* RENTAL */
 .max-rental-pricing h1{
     margin: 2rem 6rem;
+    border-bottom: black solid 1px;
 }
 
 /* table */
@@ -440,7 +449,9 @@ td{
 #reservation-main h2{
     text-align: left;
     margin: 1rem 2rem;
+    border-bottom: black solid 1px;
 }
+
 #grid-reservation{
     margin: 1rem 2rem;
     display: grid;
@@ -590,9 +601,9 @@ form label.sbs{
     padding: .5rem 2%;
 }
 
-iframe{
+.map{
     width: 100%;
-    height: 100%;
+    height: 250px;
 }
   
 /*FOOTER*/
@@ -641,7 +652,9 @@ footer{
     height: auto;
 }
 
-
+.copy-box{
+    text-align: center;
+}
 
 
 
