@@ -70,7 +70,7 @@
           "halfDay":70,
           "fullDay":90
         },
-        "imageUrl": "images/jeepWrangler-2door.webp"
+        "imageUrl": "images/JeepWrangler-2door.webp"
     },
     {
       "type": "Jeep Wrangler - 4 door with a/c",
@@ -84,7 +84,7 @@
         "halfDay":85,
         "fullDay":125
       },
-      "imageUrl": "images/jeepWrangler-4door.webp"
+      "imageUrl": "images/JeepWrangler-4door.webp"
     }
   ]
 }
